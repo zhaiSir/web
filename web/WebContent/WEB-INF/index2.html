@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title>我的第一个 HTML 页面</title>
+</head>
+<script src="../jquery-1.7.2.js"></script>
+<script>
+function check(){
+　　　var date = new Date();
+var year = date.getYear()%1900+1900;
+var month = date.getMonth()+1;
+month = month>=10 ? month:0+month;
+var result = "tjbh"+ year + month;
+$("#phone").val(result);
+   
+}
+
+function test(){
+	var a = document.getElementById("a").value;
+	var b = document.getElementById("b").value;
+	
+    if(a && b){
+    	alert("两个都有值");     //0，null，undefined，false   会被处理成false 其他视为true
+    	
+    }else{
+    	alert("至少有一个没有值");
+    }
+	
+	}
+</script>
+<body>
+<form action="">
+<tr>
+<td>
+输入：<input type="text" name="mazey" id="phone" placeholder="年份">
+　　<input type="button" value="生成" onclick="check()">
+   </td>
+   </tr>
+<tr> <br/>  
+<td>
+   a的值：<input type="text"  id="a">
+   b的值：<input type="text"  id="b">
+   <input type="button" value="test" onclick="test()"> 
+  </td>
+  </tr>
+</form>
+
+
+</body>
+
+</html>

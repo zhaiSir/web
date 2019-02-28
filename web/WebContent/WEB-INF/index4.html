@@ -1,0 +1,79 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title>我的第一个 HTML 页面</title>
+</head>
+<script src="jq/jquery-1.7.2.js"></script>
+<script src="test/test.js"></script>
+<link href="test/test.css" rel="stylesheet" type="text/css" />      <!-- //引入css的两种写法 -->
+<!--  <style type="text/css">
+     @import "test/test.css"
+ </style> -->
+<body>
+<form action="">
+<tr>
+<td>
+输入：<input type="text" id="phone" placeholder="编号">
+　　<input type="button" value="生成" onclick="check()">
+   </td>
+</tr></br>
+
+<tr>
+<td>
+输入金额：<input type="text" id="lprice" placeholder="输入金额" style="width:500px"/>
+<input type="text" id="hprice" style="display:none"/></br>
+大写金额：<input type="text" id="uprice" placeholder="生成大写" style="width:500px" />
+</td>
+</tr>
+
+<tr> <br/>  
+<td>
+   a的值：<input type="text"  id="a">
+   b的值：<input type="text"  id="b">
+   <input type="button" value="test" onclick="test()"> 
+  </td>
+  </tr>
+</form>
+
+<div class="pClass">
+<p>If you click me,i will disappear1.</p>
+<p>If you click me,i will disappear2.</p>
+</div>
+
+<a href="https://www.baidu.com"><hr /><a>
+
+<h3 id="h31" onmouseover="overShow()">中国办事处</h3>
+<div class="ex" id="div1">
+<button class="hide" type="button">隐藏</button>
+<p>联系人：张先生<br /> 
+北三环中路 100 号<br />
+北京</p>
+</div>
+
+<h3 id="h32">美国办事处</h3>
+<div class="ex">
+<button class="hide" type="button">隐藏</button>
+<p>联系人：David<br /> 
+第五大街 200 号<br />
+纽约</p>
+</div>
+
+<input type="checkbox" name="checkselect" value="1"/>
+<input type="checkbox" name="checkselect" value="1"/>
+<input type="checkbox" name="checkselect" value="1"/>
+<input type="checkbox" name="checkselect" value="1"/>
+<input type="checkbox" name="checkselect" value="2"/>
+<input type="checkbox" name="checkselect" value="2"/>
+<button type="button" onClick="chouqian()">抽签</button><br/>
+
+ <select id="select">   
+ <!-- <option value="0">请选择下拉菜单</option>  -->   
+ <option value="1">选择1</option>    
+ <option value="2">选择2</option>    
+ <option value="3">选择3</option>   
+ </select>  
+ <input type="button" value="重置下拉框" onclick="clearSelect()"/> 
+</body>
+
+</html>
